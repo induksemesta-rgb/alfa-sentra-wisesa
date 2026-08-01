@@ -1,0 +1,1 @@
+console.log("Website PT Alfa Sentra Wisesa berhasil dijalankan.");

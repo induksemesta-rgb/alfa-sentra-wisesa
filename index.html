@@ -1,293 +1,417 @@
-/* ===========================================
-   PT ALFA SENTRA WISESA
-   Corporate Export Website
-   Part 1 - Global, Header & Hero
-=========================================== */
+<!DOCTYPE html>
+<html lang="en">
 
-/* Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-/* Reset */
+    <title>PT Alfa Sentra Wisesa | Indonesian Export & International Trading Company</title>
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
+    <meta name="description"
+        content="PT Alfa Sentra Wisesa is an Indonesian export company specializing in Coconut Shell Charcoal, Activated Carbon, Biomass Products and Agricultural Commodities.">
 
-html{
-    scroll-behavior:smooth;
-}
+    <link rel="stylesheet" href="style.css">
 
-body{
-    font-family:'Poppins',sans-serif;
-    color:#333;
-    background:#ffffff;
-    line-height:1.7;
-}
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-/* Container */
+</head>
 
-.container{
-    width:90%;
-    max-width:1200px;
-    margin:auto;
-}
+<body>
 
-/* Links */
+<!-- ================= HEADER ================= -->
 
-a{
-    text-decoration:none;
-    transition:.3s;
-}
+<header>
 
-ul{
-    list-style:none;
-}
+<div class="container nav">
 
-img{
-    max-width:100%;
-    display:block;
-}
+<div class="logo">
 
-/* ===========================================
-   HEADER
-=========================================== */
+<img src="logo.png" alt="PT Alfa Sentra Wisesa">
 
-header{
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    background:#ffffff;
-    box-shadow:0 3px 15px rgba(0,0,0,.08);
-    z-index:999;
-}
+<div>
 
-.nav{
+<h2>PT Alfa Sentra Wisesa</h2>
 
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    height:90px;
+<p>Indonesian Export & International Trading Company</p>
 
-}
+</div>
 
-/* Logo */
+</div>
 
-.logo{
+<nav>
 
-    display:flex;
-    align-items:center;
+<ul>
 
-}
+<li><a href="#home">Home</a></li>
 
-.logo img{
+<li><a href="#about">About</a></li>
 
-    width:70px;
-    height:70px;
-    object-fit:contain;
-    margin-right:15px;
+<li><a href="#products">Products</a></li>
 
-}
+<li><a href="#whyus">Why Us</a></li>
 
-.logo h2{
+<li><a href="#gallery">Gallery</a></li>
 
-    font-size:24px;
-    color:#0b3d91;
-    font-weight:700;
+<li><a href="#contact">Contact</a></li>
 
-}
+</ul>
 
-.logo p{
+</nav>
 
-    font-size:13px;
-    color:#666;
+</div>
 
-}
+</header>
 
-/* Menu */
+<!-- ================= HERO ================= -->
 
-nav ul{
+<section id="home" class="hero">
 
-    display:flex;
-    align-items:center;
-    gap:35px;
+<div class="overlay">
 
-}
+<div class="hero-content">
 
-nav ul li a{
+<h1>PT ALFA SENTRA WISESA</h1>
 
-    color:#333;
-    font-weight:600;
-    font-size:15px;
-    position:relative;
+<h3>Your Trusted Indonesian Export Partner</h3>
 
-}
+<p>
 
-nav ul li a::after{
+Delivering Premium Indonesian Commodities
 
-    content:'';
-    position:absolute;
-    left:0;
-    bottom:-8px;
-    width:0%;
-    height:3px;
-    background:#0b3d91;
-    transition:.3s;
+to the Global Market with Integrity,
 
-}
+Quality and Reliability.
 
-nav ul li a:hover{
+</p>
 
-    color:#0b3d91;
+<a href="#contact" class="btn">
 
-}
+Contact Us
 
-nav ul li a:hover::after{
+</a>
 
-    width:100%;
+</div>
 
-}
+</div>
 
-/* ===========================================
-   HERO
-=========================================== */
+</section>
 
-.hero{
+<!-- ================= ABOUT ================= -->
 
-    height:100vh;
+<section id="about">
 
-    background:
-    linear-gradient(
-    rgba(5,35,90,.75),
-    rgba(5,35,90,.75)),
-    url("images/hero.jpg");
+<div class="container">
 
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
+<h2 class="section-title">
 
-    display:flex;
-    justify-content:center;
-    align-items:center;
+About Company
 
-    text-align:center;
-    color:white;
+</h2>
 
-}
+<p>
 
-/* Overlay */
+PT Alfa Sentra Wisesa is an Indonesian export and international trading company
+specializing in sourcing, quality control, and worldwide distribution of
+high-quality agricultural and industrial commodities.
 
-.overlay{
+</p>
 
-    width:100%;
-    height:100%;
+<p>
 
-    display:flex;
-    justify-content:center;
-    align-items:center;
+Our mission is to become a reliable global trading partner by providing
+competitive prices, consistent quality, professional export documentation,
+and timely delivery to customers around the world.
 
-}
+</p>
 
-/* Hero Content */
+</div>
 
-.hero-content{
+</section>
 
-    max-width:850px;
-    padding:20px;
+<!-- ================= PRODUCTS ================= -->
 
-}
+<section id="products" class="gray">
 
-.hero-content h1{
+<div class="container">
 
-    font-size:60px;
-    font-weight:800;
-    letter-spacing:2px;
-    margin-bottom:20px;
+<h2 class="section-title">
 
-}
+Our Products
 
-.hero-content h3{
+</h2>
 
-    font-size:28px;
-    color:#FFD166;
-    margin-bottom:25px;
-    font-weight:500;
+<div class="cards">
 
-}
+<div class="card">
 
-.hero-content p{
+<i class="fa-solid fa-fire"></i>
 
-    font-size:20px;
-    line-height:1.8;
-    margin-bottom:40px;
+<h3>Coconut Shell Charcoal</h3>
 
-}
+<p>
 
-/* Button */
+Premium Indonesian Coconut Shell Charcoal for
+Shisha, BBQ and Industrial purposes.
 
-.btn{
+</p>
 
-    display:inline-block;
+</div>
 
-    background:#FFD166;
-    color:#0b3d91;
+<div class="card">
 
-    padding:15px 38px;
+<i class="fa-solid fa-filter"></i>
 
-    border-radius:50px;
+<h3>Activated Carbon</h3>
 
-    font-weight:700;
+<p>
 
-    transition:.3s;
+High Quality Activated Carbon for
+Water Treatment and Industrial Applications.
 
-    box-shadow:0 8px 25px rgba(0,0,0,.25);
+</p>
 
-}
+</div>
 
-.btn:hover{
+<div class="card">
 
-    transform:translateY(-4px);
+<i class="fa-solid fa-leaf"></i>
 
-    background:#ffffff;
+<h3>Biomass Products</h3>
 
-}
+<p>
 
-/* ===========================================
-   SECTION GLOBAL
-=========================================== */
+Renewable Biomass Fuel Products
+for Sustainable Energy.
 
-section{
+</p>
 
-    padding:100px 0;
+</div>
 
-}
+<div class="card">
 
-.section-title{
+<i class="fa-solid fa-seedling"></i>
 
-    text-align:center;
-    font-size:38px;
-    color:#0b3d91;
-    margin-bottom:50px;
-    position:relative;
+<h3>Agricultural Commodities</h3>
 
-}
+<p>
 
-.section-title::after{
+Selected Indonesian Agricultural Products
+for International Market.
 
-    content:'';
-    width:80px;
-    height:4px;
-    background:#FFD166;
-    display:block;
-    margin:15px auto 0;
-    border-radius:10px;
+</p>
 
-}
+</div>
 
-.gray{
+</div>
 
-    background:#f7f9fc;
+</div>
 
-}
+</section>
+
+<!-- ================= WHY US ================= -->
+
+<section id="whyus">
+
+<div class="container">
+
+<h2 class="section-title">
+
+Why Choose Us
+
+</h2>
+
+<div class="features">
+
+<div>
+
+<i class="fa-solid fa-circle-check"></i>
+
+<h3>Quality Control</h3>
+
+<p>
+
+Every shipment is inspected before export.
+
+</p>
+
+</div>
+
+<div>
+
+<i class="fa-solid fa-globe"></i>
+
+<h3>Global Export</h3>
+
+<p>
+
+Serving international buyers worldwide.
+
+</p>
+
+</div>
+
+<div>
+
+<i class="fa-solid fa-file-contract"></i>
+
+<h3>Complete Documentation</h3>
+
+<p>
+
+Professional export documentation.
+
+</p>
+
+</div>
+
+<div>
+
+<i class="fa-solid fa-truck-fast"></i>
+
+<h3>On-Time Delivery</h3>
+
+<p>
+
+Reliable logistics and shipment schedule.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= GALLERY ================= -->
+
+<section id="gallery" class="gray">
+
+<div class="container">
+
+<h2 class="section-title">
+
+Gallery
+
+</h2>
+
+<div class="gallery">
+
+<img src="images/gallery1.jpg" alt="">
+
+<img src="images/gallery2.jpg" alt="">
+
+<img src="images/gallery3.jpg" alt="">
+
+<img src="images/gallery4.jpg" alt="">
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact">
+
+<div class="container">
+
+<h2 class="section-title">
+
+Contact Us
+
+</h2>
+
+<div class="contact-box">
+
+<div>
+
+<h3>Office</h3>
+
+<p>
+
+PT Alfa Sentra Wisesa
+
+</p>
+
+<p>
+
+Indonesia
+
+</p>
+
+<p>
+
+Email :
+
+info@alfasentrawisesa.com
+
+</p>
+
+<p>
+
+WhatsApp :
+
++62 xxx xxxx xxxx
+
+</p>
+
+</div>
+
+<form>
+
+<input type="text" placeholder="Your Name">
+
+<input type="email" placeholder="Email">
+
+<textarea placeholder="Your Message"></textarea>
+
+<button type="submit">
+
+Send Message
+
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<div class="container">
+
+<p>
+
+© 2026 PT Alfa Sentra Wisesa.
+
+All Rights Reserved.
+
+</p>
+
+</div>
+
+</footer>
+
+<!-- WhatsApp -->
+
+<a href="#" class="whatsapp">
+
+<i class="fab fa-whatsapp"></i>
+
+</a>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1626,3 +1626,124 @@ nav{
 }
 
 }
+
+
+/* ===============================
+   SCROLL ANIMATION
+=============================== */
+
+.about-content,
+.product-card,
+.why-card,
+.gallery-grid img,
+.contact-content{
+
+opacity:0;
+
+transform:translateY(40px);
+
+transition:all .8s ease;
+
+}
+
+.show{
+
+opacity:1 !important;
+
+transform:translateY(0) !important;
+
+}
+
+/* ===============================
+   PAGE LOADED
+=============================== */
+
+.loaded{
+
+animation:fadePage .8s ease;
+
+}
+
+@keyframes fadePage{
+
+from{
+
+opacity:0;
+
+}
+
+to{
+
+opacity:1;
+
+}
+
+}
+
+/* ======================================================
+   LIGHTBOX
+====================================================== */
+
+#lightbox{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+height:100%;
+
+background:rgba(0,0,0,.9);
+
+display:none;
+
+justify-content:center;
+
+align-items:center;
+
+z-index:99999;
+
+}
+
+#lightbox.active{
+
+display:flex;
+
+}
+
+#lightbox img{
+
+max-width:90%;
+
+max-height:90%;
+
+border-radius:10px;
+
+box-shadow:0 0 30px rgba(255,255,255,.2);
+
+animation:zoom .3s;
+
+}
+
+@keyframes zoom{
+
+from{
+
+transform:scale(.8);
+
+opacity:0;
+
+}
+
+to{
+
+transform:scale(1);
+
+opacity:1;
+
+}
+
+}

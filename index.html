@@ -1,79 +1,293 @@
-<body>
+/* ===========================================
+   PT ALFA SENTRA WISESA
+   Corporate Export Website
+   Part 1 - Global, Header & Hero
+=========================================== */
 
-<header>
-    <nav>
-        <div class="logo">
-            <img src="logo.png" alt="Logo">
-            <div>
-                <h2>PT Alfa Sentra Wisesa</h2>
-                <p>Indonesian Export & International Trading Company</p>
-            </div>
-        </div>
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#products">Products</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+/* Reset */
 
-<section id="home">
-    <h1>PT ALFA SENTRA WISESA</h1>
-    <p>Indonesian Export & International Trading Company</p>
-    <a href="#contact">Contact Us</a>
-</section>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-<section id="about">
-    <h2>About Us</h2>
-    <p>
-        PT Alfa Sentra Wisesa is an Indonesian export company 
-        engaged in the international trade of various commodities, 
-        specifically coconut shell charcoal, activated carbon, 
-        biomass products, and agricultural products.
-    </p>
-</section>
+html{
+    scroll-behavior:smooth;
+}
 
-<section id="products">
-    <h2>Our Products</h2>
-    <ul>
-        <li>Coconut Shell Charcoal</li>
-        <li>Activated Carbon</li>
-        <li>Biomass Products</li>
-        <li>Agricultural Commodities</li>
-    </ul>
-</section>
+body{
+    font-family:'Poppins',sans-serif;
+    color:#333;
+    background:#ffffff;
+    line-height:1.7;
+}
 
-<section id="why">
-    <h2>Why Choose Us</h2>
-    <ul>
-        <li>Quality Control</li>
-        <li>Competitive Price</li>
-        <li>Export Documentation</li>
-        <li>On Time Shipment</li>
-        <li>Global Market</li>
-    </ul>
-</section>
+/* Container */
 
-<section id="gallery">
-    <h2>Gallery</h2>
-    <p>Our Product datails</p>
-</section>
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
 
-<section id="contact">
-    <h2>Contact</h2>
-    <p>WhatsApp</p>
-    <p>Email</p>
-    <p>Address</p>
-    <p>Google Maps</p>
-</section>
+/* Links */
 
-<footer>
-    <p>Copyright © 2026 PT Alfa Sentra Wisesa</p>
-</footer>
+a{
+    text-decoration:none;
+    transition:.3s;
+}
 
-<script src="script.js"></script>
+ul{
+    list-style:none;
+}
 
-</body>
+img{
+    max-width:100%;
+    display:block;
+}
+
+/* ===========================================
+   HEADER
+=========================================== */
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background:#ffffff;
+    box-shadow:0 3px 15px rgba(0,0,0,.08);
+    z-index:999;
+}
+
+.nav{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    height:90px;
+
+}
+
+/* Logo */
+
+.logo{
+
+    display:flex;
+    align-items:center;
+
+}
+
+.logo img{
+
+    width:70px;
+    height:70px;
+    object-fit:contain;
+    margin-right:15px;
+
+}
+
+.logo h2{
+
+    font-size:24px;
+    color:#0b3d91;
+    font-weight:700;
+
+}
+
+.logo p{
+
+    font-size:13px;
+    color:#666;
+
+}
+
+/* Menu */
+
+nav ul{
+
+    display:flex;
+    align-items:center;
+    gap:35px;
+
+}
+
+nav ul li a{
+
+    color:#333;
+    font-weight:600;
+    font-size:15px;
+    position:relative;
+
+}
+
+nav ul li a::after{
+
+    content:'';
+    position:absolute;
+    left:0;
+    bottom:-8px;
+    width:0%;
+    height:3px;
+    background:#0b3d91;
+    transition:.3s;
+
+}
+
+nav ul li a:hover{
+
+    color:#0b3d91;
+
+}
+
+nav ul li a:hover::after{
+
+    width:100%;
+
+}
+
+/* ===========================================
+   HERO
+=========================================== */
+
+.hero{
+
+    height:100vh;
+
+    background:
+    linear-gradient(
+    rgba(5,35,90,.75),
+    rgba(5,35,90,.75)),
+    url("images/hero.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+    color:white;
+
+}
+
+/* Overlay */
+
+.overlay{
+
+    width:100%;
+    height:100%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+/* Hero Content */
+
+.hero-content{
+
+    max-width:850px;
+    padding:20px;
+
+}
+
+.hero-content h1{
+
+    font-size:60px;
+    font-weight:800;
+    letter-spacing:2px;
+    margin-bottom:20px;
+
+}
+
+.hero-content h3{
+
+    font-size:28px;
+    color:#FFD166;
+    margin-bottom:25px;
+    font-weight:500;
+
+}
+
+.hero-content p{
+
+    font-size:20px;
+    line-height:1.8;
+    margin-bottom:40px;
+
+}
+
+/* Button */
+
+.btn{
+
+    display:inline-block;
+
+    background:#FFD166;
+    color:#0b3d91;
+
+    padding:15px 38px;
+
+    border-radius:50px;
+
+    font-weight:700;
+
+    transition:.3s;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.25);
+
+}
+
+.btn:hover{
+
+    transform:translateY(-4px);
+
+    background:#ffffff;
+
+}
+
+/* ===========================================
+   SECTION GLOBAL
+=========================================== */
+
+section{
+
+    padding:100px 0;
+
+}
+
+.section-title{
+
+    text-align:center;
+    font-size:38px;
+    color:#0b3d91;
+    margin-bottom:50px;
+    position:relative;
+
+}
+
+.section-title::after{
+
+    content:'';
+    width:80px;
+    height:4px;
+    background:#FFD166;
+    display:block;
+    margin:15px auto 0;
+    border-radius:10px;
+
+}
+
+.gray{
+
+    background:#f7f9fc;
+
+}
